@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionnaire de liste</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div class="container">
+    <h2>To-do liste</h2>
+
+    <label for="itemInput">Nouvel élément :</label>
+    <input type="text" id="itemInput" placeholder="Ajouter un élément">
+    <br>
+
+    <button onclick="addItem()">Ajouter</button>
+    <button id="removeButton" onclick="removeSelected()" style="display:none;">Supprimer</button>
+
+    <ul id="itemList"></ul>
+
+    <p id="message"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
